@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+
+    <ImageView android:layout_width="50dp"
+               android:id="@+id/imageName"
+                 android:src="@drawable/ic_person_black_24dp"
+               android:layout_height="50dp"
+    />
+
+    <TextView android:layout_width="match_parent"
+              android:id="@+id/textName"
+              android:layout_toRightOf="@+id/imageName"
+              android:layout_height="wrap_content"
+              tools:ignore="InvalidId"/>
+
+    <TextView android:layout_width="match_parent"
+              android:id="@+id/textGender"
+              android:layout_below="@id/textName"
+              android:layout_toRightOf="@+id/imageName"
+              android:layout_height="wrap_content"
+              tools:ignore="InvalidId"/>
+
+    <TextView android:layout_width="match_parent"
+              android:id="@+id/textDate"
+              android:layout_toRightOf="@+id/imageName"
+              android:layout_below="@id/textGender"
+              android:layout_height="wrap_content"
+              tools:ignore="InvalidId,UnknownId"/>
+
+    <TextView android:layout_width="match_parent"
+              android:id="@+id/textRole"
+              android:layout_toRightOf="@id/imageName"
+              android:layout_below="@+id/textDate"
+              android:layout_height="wrap_content"
+              tools:ignore="InvalidId"/>
+
+
+</RelativeLayout>
